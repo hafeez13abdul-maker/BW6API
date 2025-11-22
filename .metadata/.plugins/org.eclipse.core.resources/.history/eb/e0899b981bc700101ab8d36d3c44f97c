@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:axis2="http://xsd.tns.tibco.com/bw/models/binding/soap/axis2" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmlns:schema_1763730461945="http://www.example.org/schema/1763730461945" xmlns:wsdl_1763730461898="http://www.example.org/wsdl/1763730461898" xmi:id="__TkMsMbaEfCWoNddOvrFIQ" targetNamespace="http://tns.tibco.com/bw/composite/SOAPAPI" name="SOAPAPI" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_Rt4L4MbbEfCWoNddOvrFIQ" name="EmpAPI" promote="ComponentProcess/EmpAPI">
+    <sca:interface.wsdl xmi:id="_Rt4L5MbbEfCWoNddOvrFIQ" interface="http://www.example.org/wsdl/1763730461898#wsdl.interface(EmpAPI)"/>
+    <scaext:binding xsi:type="axis2:SOAPServiceBinding" xmi:id="_ElV_oMbsEfCWoNddOvrFIQ" name="SOAPServiceBinding" targetNamespace="http://www.tibco.com/8c8c2286cf434e03a617028ba3351a6a/SOAPServiceBinding" portTypeQName="wsdl_1763730461898:EmpAPI" transportBindingType="HTTP" attachmentStyle="SwA" modelVersion="1.2.0" portTypeWSDLLocation="platform:/resource/SOAPAPI/Service%20Descriptors/Process.wsdl">
+      <bindingType xmi:id="_ElfwoMbsEfCWoNddOvrFIQ"/>
+      <inboundConfiguration xsi:type="axis2:HttpTransportConfiguration" xmi:id="_JurQ8MbsEfCWoNddOvrFIQ" endpointURI="/SOAPServiceBinding/empAPI/" httpConnector="soapapi.HTTPConnectorResource"/>
+      <operationConfiguration xmi:id="_ElfwocbsEfCWoNddOvrFIQ" operationName="UpsertEmp" action="UpsertEmp" actionNeeded="true">
+        <bindingType xmi:id="_ElfwosbsEfCWoNddOvrFIQ"/>
+        <messageConfiguration xmi:id="_Elfwo8bsEfCWoNddOvrFIQ" messageQName="wsdl_1763730461898:UpsertEmpRequest" wsdlLocation="platform:/resource/SOAPAPI/Service%20Descriptors/Process.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_ElfwpMbsEfCWoNddOvrFIQ" partName="parameters" partElementName="schema_1763730461945:UpsertEmpRequest"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_ElfwpcbsEfCWoNddOvrFIQ" messageQName="wsdl_1763730461898:UpsertEmpResponse" messageDirection="OUTPUT" wsdlLocation="platform:/resource/SOAPAPI/Service%20Descriptors/Process.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_ElfwpsbsEfCWoNddOvrFIQ" partName="parameters" partElementName="schema_1763730461945:UpsertEmpResponse"/>
+        </messageConfiguration>
+        <context xmi:id="_Elfwp8bsEfCWoNddOvrFIQ">
+          <inputMapping xmi:id="_ElfwqMbsEfCWoNddOvrFIQ"/>
+          <outputMapping xmi:id="_ElfwqcbsEfCWoNddOvrFIQ" direction="OUTPUT"/>
+        </context>
+      </operationConfiguration>
+      <operationConfiguration xmi:id="_1hxycMbuEfCWoNddOvrFIQ" operationName="DeleteEmp" action="operation" actionNeeded="true">
+        <bindingType xmi:id="_1hxyccbuEfCWoNddOvrFIQ"/>
+        <messageConfiguration xmi:id="_1hxycsbuEfCWoNddOvrFIQ" messageQName="wsdl_1763730461898:DeleteEmpRequest2" wsdlLocation="platform:/resource/SOAPAPI/Service%20Descriptors/Process.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_1hxyc8buEfCWoNddOvrFIQ" partName="parameters" partElementName="schema_1763730461945:operationRequest2"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_1hxydMbuEfCWoNddOvrFIQ" messageQName="wsdl_1763730461898:DeleteEmpResponse1" messageDirection="OUTPUT" wsdlLocation="platform:/resource/SOAPAPI/Service%20Descriptors/Process.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_1hxydcbuEfCWoNddOvrFIQ" partName="parameters" partElementName="schema_1763730461945:operationResponse1"/>
+        </messageConfiguration>
+        <context xmi:id="_1hxydsbuEfCWoNddOvrFIQ">
+          <inputMapping xmi:id="_1hxyd8buEfCWoNddOvrFIQ"/>
+          <outputMapping xmi:id="_1hxyeMbuEfCWoNddOvrFIQ" direction="OUTPUT"/>
+        </context>
+      </operationConfiguration>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_ElfwqsbsEfCWoNddOvrFIQ" bindingName="SOAPServiceBinding"/>
+  </sca:service>
+  <sca:service xmi:id="_JAta4sbwEfCWoNddOvrFIQ" name="employee" promote="ComponentEmployee/employee">
+    <sca:interface.wsdl xmi:id="_JAta5sbwEfCWoNddOvrFIQ" interface="http://xmlns.example.com/20251121210834PLT#wsdl.interface(employee)" scaext:wsdlLocation="../Processes/RESTAPI/Employee.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_JA3L4MbwEfCWoNddOvrFIQ" name="RestService" path="/delEmp" docBasePath="http://localhost:7777/SOAPAPI" docResourcePath="Employee" basePath="/" connector="soapapi.HTTPRESTConnector" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/RESTAPI.Employee-Employee.json">
+      <operation xmi:id="_JBA84MbwEfCWoNddOvrFIQ" operationName="post" nickname="DeleteEMP" httpMethod="POST" responseStyle="element" requestStyle="element">
+        <parameters xmi:id="_gvBlIMcCEfCWoNddOvrFIQ">
+          <parameterMapping xmi:id="_d96BAMcFEfCIQfD07tzNaQ" parameterName="EmpId" parameterType="Query" dataType="integer#int32"/>
+        </parameters>
+        <clientFormat>json</clientFormat>
+        <clientFormat>xml</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+        <clientRequestFormat>xml</clientRequestFormat>
+      </operation>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_JBA84cbwEfCWoNddOvrFIQ" bindingName="RestService"/>
+  </sca:service>
+  <sca:service xmi:id="_M1Sy4ccIEfCIQfD07tzNaQ" name="emp" promote="ComponentEmployee/emp">
+    <sca:interface.wsdl xmi:id="_M1b80scIEfCIQfD07tzNaQ" interface="http://xmlns.example.com/20251121210834PLT#wsdl.interface(emp)" scaext:wsdlLocation="../Processes/RESTAPI/Employee.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_M1lt0McIEfCIQfD07tzNaQ" name="RestService1" path="/emp" docBasePath="http://localhost:7777/SOAPAPI" docResourcePath="Employee" basePath="/" connector="soapapi.HTTPRESTConnector" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/RESTAPI.Employee-Employee.json">
+      <operation xmi:id="_M1lt0ccIEfCIQfD07tzNaQ" operationName="patch" nickname="patch-emp" httpMethod="PATCH" responseStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_M1lt08cIEfCIQfD07tzNaQ"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_M1lt0scIEfCIQfD07tzNaQ" bindingName="RestService1"/>
+  </sca:service>
+  <sca:service xmi:id="_OGKKkscYEfCIQfD07tzNaQ" name="DynaQuery" promote="ComponentEmployee/DynaQuery">
+    <sca:interface.wsdl xmi:id="_OGT7kccYEfCIQfD07tzNaQ" interface="http://xmlns.example.com/20251121210834PLT#wsdl.interface(DynaQuery)" scaext:wsdlLocation="../Processes/RESTAPI/Employee.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_OGT7kscYEfCIQfD07tzNaQ" name="RestService2" path="/DynaQuery" docBasePath="http://localhost:7777/SOAPAPI" docResourcePath="Employee" basePath="/" connector="soapapi.HTTPRESTConnector" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/RESTAPI.Employee-Employee.json">
+      <operation xmi:id="_OGT7k8cYEfCIQfD07tzNaQ" operationName="post" nickname="post-DynaQuery" httpMethod="POST" responseStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_OGT7lccYEfCIQfD07tzNaQ"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_OGT7lMcYEfCIQfD07tzNaQ" bindingName="RestService2"/>
+  </sca:service>
+  <sca:property xmi:id="___EAwMbaEfCWoNddOvrFIQ" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___XiwMbaEfCWoNddOvrFIQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___XiwcbaEfCWoNddOvrFIQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___gssMbaEfCWoNddOvrFIQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___qdsMbaEfCWoNddOvrFIQ" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___znoMbaEfCWoNddOvrFIQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___znocbaEfCWoNddOvrFIQ" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___9YoMbaEfCWoNddOvrFIQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___9YocbaEfCWoNddOvrFIQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="__py7YMbaEfCWoNddOvrFIQ" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="__py7YcbaEfCWoNddOvrFIQ" processName="soapapi.Process"/>
+    <sca:service xmi:id="_Rtua4MbbEfCWoNddOvrFIQ" name="EmpAPI">
+      <sca:interface.wsdl xmi:id="_Rtua4cbbEfCWoNddOvrFIQ" interface="http://www.example.org/wsdl/1763730461898#wsdl.interface(EmpAPI)" scaext:wsdlLocation="../Service%20Descriptors/Process.wsdl"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_JAkQ8MbwEfCWoNddOvrFIQ" name="ComponentEmployee" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_JAkQ8cbwEfCWoNddOvrFIQ" processName="RESTAPI.Employee"/>
+    <sca:service xmi:id="_JAta4MbwEfCWoNddOvrFIQ" name="employee">
+      <sca:interface.wsdl xmi:id="_JAta4cbwEfCWoNddOvrFIQ" interface="http://xmlns.example.com/20251121210834PLT#wsdl.interface(employee)" scaext:wsdlLocation="../Processes/RESTAPI/Employee.bwp"/>
+    </sca:service>
+    <sca:service xmi:id="_M1JB4McIEfCIQfD07tzNaQ" name="emp">
+      <sca:interface.wsdl xmi:id="_M1Sy4McIEfCIQfD07tzNaQ" interface="http://xmlns.example.com/20251121210834PLT#wsdl.interface(emp)" scaext:wsdlLocation="../Processes/RESTAPI/Employee.bwp"/>
+    </sca:service>
+    <sca:service xmi:id="_OGKKkMcYEfCIQfD07tzNaQ" name="DynaQuery">
+      <sca:interface.wsdl xmi:id="_OGKKkccYEfCIQfD07tzNaQ" interface="http://xmlns.example.com/20251121210834PLT#wsdl.interface(DynaQuery)" scaext:wsdlLocation="../Processes/RESTAPI/Employee.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

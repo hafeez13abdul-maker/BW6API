@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:axis2="http://xsd.tns.tibco.com/bw/models/binding/soap/axis2" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmlns:schema_1763730461945="http://www.example.org/schema/1763730461945" xmlns:wsdl_1763730461898="http://www.example.org/wsdl/1763730461898" xmi:id="__TkMsMbaEfCWoNddOvrFIQ" targetNamespace="http://tns.tibco.com/bw/composite/SOAPAPI" name="SOAPAPI" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_Rt4L4MbbEfCWoNddOvrFIQ" name="EmpAPI" promote="ComponentProcess/EmpAPI">
+    <sca:interface.wsdl xmi:id="_Rt4L5MbbEfCWoNddOvrFIQ" interface="http://www.example.org/wsdl/1763730461898#wsdl.interface(EmpAPI)"/>
+    <scaext:binding xsi:type="axis2:SOAPServiceBinding" xmi:id="_ElV_oMbsEfCWoNddOvrFIQ" name="SOAPServiceBinding" targetNamespace="http://www.tibco.com/8c8c2286cf434e03a617028ba3351a6a/SOAPServiceBinding" portTypeQName="wsdl_1763730461898:EmpAPI" transportBindingType="HTTP" attachmentStyle="SwA" modelVersion="1.2.0" portTypeWSDLLocation="platform:/resource/SOAPAPI/Service%20Descriptors/Process.wsdl">
+      <bindingType xmi:id="_ElfwoMbsEfCWoNddOvrFIQ"/>
+      <inboundConfiguration xsi:type="axis2:HttpTransportConfiguration" xmi:id="_JurQ8MbsEfCWoNddOvrFIQ" endpointURI="/SOAPServiceBinding/empAPI/" httpConnector="soapapi.HTTPConnectorResource"/>
+      <operationConfiguration xmi:id="_ElfwocbsEfCWoNddOvrFIQ" operationName="UpsertEmp" action="UpsertEmp" actionNeeded="true">
+        <bindingType xmi:id="_ElfwosbsEfCWoNddOvrFIQ"/>
+        <messageConfiguration xmi:id="_Elfwo8bsEfCWoNddOvrFIQ" messageQName="wsdl_1763730461898:UpsertEmpRequest" wsdlLocation="platform:/resource/SOAPAPI/Service%20Descriptors/Process.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_ElfwpMbsEfCWoNddOvrFIQ" partName="parameters" partElementName="schema_1763730461945:UpsertEmpRequest"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_ElfwpcbsEfCWoNddOvrFIQ" messageQName="wsdl_1763730461898:UpsertEmpResponse" messageDirection="OUTPUT" wsdlLocation="platform:/resource/SOAPAPI/Service%20Descriptors/Process.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_ElfwpsbsEfCWoNddOvrFIQ" partName="parameters" partElementName="schema_1763730461945:UpsertEmpResponse"/>
+        </messageConfiguration>
+        <context xmi:id="_Elfwp8bsEfCWoNddOvrFIQ">
+          <inputMapping xmi:id="_ElfwqMbsEfCWoNddOvrFIQ"/>
+          <outputMapping xmi:id="_ElfwqcbsEfCWoNddOvrFIQ" direction="OUTPUT"/>
+        </context>
+      </operationConfiguration>
+      <operationConfiguration xmi:id="_1hxycMbuEfCWoNddOvrFIQ" operationName="DeleteEmp" action="operation" actionNeeded="true">
+        <bindingType xmi:id="_1hxyccbuEfCWoNddOvrFIQ"/>
+        <messageConfiguration xmi:id="_1hxycsbuEfCWoNddOvrFIQ" messageQName="wsdl_1763730461898:operationRequest2" wsdlLocation="platform:/resource/SOAPAPI/Service%20Descriptors/Process.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_1hxyc8buEfCWoNddOvrFIQ" partName="parameters" partElementName="schema_1763730461945:operationRequest2"/>
+        </messageConfiguration>
+        <messageConfiguration xmi:id="_1hxydMbuEfCWoNddOvrFIQ" messageQName="wsdl_1763730461898:operationResponse1" messageDirection="OUTPUT" wsdlLocation="platform:/resource/SOAPAPI/Service%20Descriptors/Process.wsdl">
+          <messagePartConfigurations xsi:type="axis2:BodyPartConfiguration" xmi:id="_1hxydcbuEfCWoNddOvrFIQ" partName="parameters" partElementName="schema_1763730461945:operationResponse1"/>
+        </messageConfiguration>
+        <context xmi:id="_1hxydsbuEfCWoNddOvrFIQ">
+          <inputMapping xmi:id="_1hxyd8buEfCWoNddOvrFIQ"/>
+          <outputMapping xmi:id="_1hxyeMbuEfCWoNddOvrFIQ" direction="OUTPUT"/>
+        </context>
+      </operationConfiguration>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_ElfwqsbsEfCWoNddOvrFIQ" bindingName="SOAPServiceBinding"/>
+  </sca:service>
+  <sca:property xmi:id="___EAwMbaEfCWoNddOvrFIQ" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___XiwMbaEfCWoNddOvrFIQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___XiwcbaEfCWoNddOvrFIQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___gssMbaEfCWoNddOvrFIQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___qdsMbaEfCWoNddOvrFIQ" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___znoMbaEfCWoNddOvrFIQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___znocbaEfCWoNddOvrFIQ" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___9YoMbaEfCWoNddOvrFIQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___9YocbaEfCWoNddOvrFIQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="__py7YMbaEfCWoNddOvrFIQ" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="__py7YcbaEfCWoNddOvrFIQ" processName="soapapi.Process"/>
+    <sca:service xmi:id="_Rtua4MbbEfCWoNddOvrFIQ" name="EmpAPI">
+      <sca:interface.wsdl xmi:id="_Rtua4cbbEfCWoNddOvrFIQ" interface="http://www.example.org/wsdl/1763730461898#wsdl.interface(EmpAPI)" scaext:wsdlLocation="../Service%20Descriptors/Process.wsdl"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

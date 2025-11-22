@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:extns="http://www.example.org/schema/1763730461945" xmlns:tns="http://www.example.org/wsdl/1763730461898" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Process" targetNamespace="http://www.example.org/wsdl/1763730461898">
+  <wsdl:import namespace="http://www.example.org/schema/1763730461945"/>
+    <wsdl:types>
+    <xsd:schema elementFormDefault="unqualified" targetNamespace="http://www.example.org/wsdl/1763730461898">
+      <xsd:element name="operationRequest1">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="in" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+            <xsd:element name="operation1Request1">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="in" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+            <xsd:element name="operation1Response1">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="out" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+        </xsd:schema>
+  </wsdl:types>
+    <wsdl:message name="UpsertEmpRequest">
+    <wsdl:part element="extns:UpsertEmpRequest" name="parameters"/>
+    </wsdl:message>
+  <wsdl:message name="UpsertEmpResponse">
+    <wsdl:part element="extns:UpsertEmpResponse" name="parameters"/>
+  </wsdl:message>
+    <wsdl:message name="operationRequest">
+    <wsdl:part element="extns:DeleteEmp" name="parameters"/>
+  </wsdl:message>
+    <wsdl:message name="operationResponse">
+    <wsdl:part element="extns:operationResponse" name="parameters"/>
+  </wsdl:message>
+    <wsdl:message name="operation1Request">
+    <wsdl:part element="extns:operation1Request" name="parameters"/>
+  </wsdl:message>
+    <wsdl:message name="operation1Response">
+    <wsdl:part element="extns:operation1Response" name="parameters"/>
+  </wsdl:message>
+    <wsdl:message name="operationRequest1">
+    <wsdl:part element="tns:operationRequest1" name="parameters"/>
+  </wsdl:message>
+    <wsdl:message name="operation1Request1">
+    <wsdl:part element="tns:operation1Request1" name="parameters"/>
+  </wsdl:message>
+    <wsdl:message name="operation1Response1">
+    <wsdl:part element="tns:operation1Response1" name="parameters"/>
+  </wsdl:message>
+    <wsdl:message name="DeleteEmpRequest2">
+    <wsdl:part element="extns:DeleteEmpRequest2" name="parameters"/>
+  </wsdl:message>
+    <wsdl:message name="DeleteEmpResponse1">
+    <wsdl:part element="extns:DeleteEmpResponse1" name="parameters"/>
+  </wsdl:message>
+    <wsdl:portType name="EmpAPI">
+    <wsdl:operation name="UpsertEmp">
+      <wsdl:input message="tns:UpsertEmpRequest" name="operationInput"/>
+      <wsdl:output message="tns:UpsertEmpResponse" name="operationOutput"/>
+    </wsdl:operation>
+
+
+        <wsdl:operation name="DeleteEmp">
+      <wsdl:input message="tns:DeleteEmpRequest2" name="operationInput0"/>
+      <wsdl:output message="tns:DeleteEmpResponse1" name="operationOutput0"/>
+    </wsdl:operation>
+    </wsdl:portType>
+
+</wsdl:definitions>

@@ -1,0 +1,58 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:9803",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/delEmp" : {
+      "post" : {
+        "description" : "",
+        "operationId" : "DeleteEMP",
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/json", "application/xml" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/DeleteEmp"
+          },
+          "required" : true
+        }, {
+          "name" : "EmpId",
+          "in" : "query",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a string to be returned",
+            "schema" : {
+              "type" : "string"
+            }
+          },
+          "200" : {
+            "description" : "OK"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "DeleteEmp" : {
+      "type" : "object",
+      "required" : [ "EmpId" ],
+      "properties" : {
+        "EmpId" : {
+          "type" : "integer"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="__TkMsMbaEfCWoNddOvrFIQ" targetNamespace="http://tns.tibco.com/bw/composite/SOAPAPI" name="SOAPAPI" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_Rt4L4MbbEfCWoNddOvrFIQ" name="EmpAPI" promote="ComponentProcess/EmpAPI">
+    <sca:interface.wsdl xmi:id="_Rt4L5MbbEfCWoNddOvrFIQ" interface="http://www.example.org/wsdl/1763730461898#wsdl.interface(EmpAPI)" scaext:wsdlLocation="../Service%20Descriptors/Process.wsdl"/>
+  </sca:service>
+  <sca:property xmi:id="___EAwMbaEfCWoNddOvrFIQ" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___XiwMbaEfCWoNddOvrFIQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___XiwcbaEfCWoNddOvrFIQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___gssMbaEfCWoNddOvrFIQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___qdsMbaEfCWoNddOvrFIQ" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___znoMbaEfCWoNddOvrFIQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___znocbaEfCWoNddOvrFIQ" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___9YoMbaEfCWoNddOvrFIQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="___9YocbaEfCWoNddOvrFIQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="__py7YMbaEfCWoNddOvrFIQ" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="__py7YcbaEfCWoNddOvrFIQ" processName="soapapi.Process"/>
+    <sca:service xmi:id="_Rtua4MbbEfCWoNddOvrFIQ" name="EmpAPI">
+      <sca:interface.wsdl xmi:id="_Rtua4cbbEfCWoNddOvrFIQ" interface="http://www.example.org/wsdl/1763730461898#wsdl.interface(EmpAPI)" scaext:wsdlLocation="../Service%20Descriptors/Process.wsdl"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="/T1763742271967Converted/JsonSchema" elementFormDefault="qualified" targetNamespace="/T1763742271967Converted/JsonSchema">
+  <complexType name="integerArray">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="integer" type="integer"/>
+    </sequence>
+  </complexType>
+  <element name="integerArray" type="tns:integerArray"/>
+</schema>

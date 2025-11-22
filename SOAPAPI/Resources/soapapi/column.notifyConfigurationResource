@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:notifyconfiguration="http://ns.tibco.com/bw/sharedresource/notifyconfiguration" xmlns:tns_1763750076106="http://www.example.com/namespaces/tns/1763750076106" xmi:id="_HYEYYccMEfCIQfD07tzNaQ" name="soapapi.column" type="notifyconfiguration:NotifyConfiguration">
+  <imports xmi:id="_pBX_YMcOEfCIQfD07tzNaQ" importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.com/namespaces/tns/1763750076106"/>
+  <jndi:configuration xsi:type="notifyconfiguration:NotifyConfiguration" xmi:id="_HYEYYscMEfCIQfD07tzNaQ" schemaElementQname="tns_1763750076106:satatemet"/>
+</jndi:namedResource>
