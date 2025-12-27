@@ -1,5 +1,12 @@
 eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.BW\ Maven=C\:/Users/HAFEEZ/Downloads/bw6-maven-plugin-1.3.1.jar
 org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=C\:/BW6/bw/6.4/system/hotfix/lib/common
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=C\:/BW6/tibcojre64/1.8.0/lib/rt.jar
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=
+org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
+org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=C\:/BW6/eclipse-platform/bundlepool/1.0/org.eclipse.equinox.p2.touchpoint.eclipse/plugins/org.junit_4.11.0.v201303080030/
+org.eclipse.jdt.core.classpathVariable.MAVEN_HOME=C\:/Users/HAFEEZ/Downloads/apache-maven-3.6.2-bin/apache-maven-3.6.2/bin
+org.eclipse.jdt.core.classpathVariable.Maven\ Plugin=C\:/Users/HAFEEZ/Downloads/bw6-maven-plugin-2.10.2.jar
 org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
 org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.8
 org.eclipse.jdt.core.compiler.compliance=1.8

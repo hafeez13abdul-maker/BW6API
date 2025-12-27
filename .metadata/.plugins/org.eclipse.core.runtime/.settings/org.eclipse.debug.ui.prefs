@@ -1,8 +1,9 @@
 com.tibco.bw.core.design.debug.ui.launch.existingApplications=SOAPAPI.application/
-com.tibco.bw.core.design.debug.ui.launch.processesArg=SOAPAPI.application\=RESTAPI.Employee,soapapi.DeleteEmp,soapapi.DynamicQuery,soapapi.Process,soapapi.SubProcess,soapapi.SubProcess1/
+com.tibco.bw.core.design.debug.ui.launch.processesArg=SOAPAPI.application\=RESTAPI.Employee,soapapi.DeleteEmp,soapapi.DynamicQuery,soapapi.FetchEmp,soapapi.Process,soapapi.SubProcess,soapapi.SubProcess1/
 com.tibco.bw.core.design.debug.ui.launch.selectedApplications=SOAPAPI.application/
 com.tibco.bw.core.design.debug.ui.launch.selectedModules=SOAPAPI/
-com.tibco.bw.core.design.debug.ui.launch.selectedProcesses=SOAPAPI\=RESTAPI.Employee,soapapi.DeleteEmp,soapapi.DynamicQuery,soapapi.Process,soapapi.SubProcess,soapapi.SubProcess1/
+com.tibco.bw.core.design.debug.ui.launch.selectedProcesses=SOAPAPI\=RESTAPI.Employee,soapapi.DeleteEmp,soapapi.DynamicQuery,soapapi.FetchEmp,soapapi.Process,soapapi.SubProcess,soapapi.SubProcess1/
+com.tibco.bw.core.design.debug.ui.view.BWProcessInstanceView+com.tibco.bw.core.design.debug.ui.actions.BWShowInstanceSatckByTempleteAction=true
 eclipse.preferences.version=1
 org.eclipse.debug.ui.DebugView+com.tibco.bw.core.design.debug.ui.actions.BWShowStackByTempleteAction=true
 org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<launchPerspectives/>\r\n

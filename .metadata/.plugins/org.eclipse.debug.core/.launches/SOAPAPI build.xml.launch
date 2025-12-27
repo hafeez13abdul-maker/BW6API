@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.ant.AntLaunchConfigurationType">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES"/>
+<stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.ant.ui.AntClasspathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="SOAPAPI"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.ant.ui.AntClasspathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_INSTALL_NAME" value="1.8.0"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_INSTALL_TYPE_ID" value="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType"/>
+<mapAttribute key="org.eclipse.ui.externaltools.ATTR_ANT_PROPERTIES">
+<mapEntry key="basearch" value="x86_64"/>
+<mapEntry key="basenl" value="en_IN"/>
+<mapEntry key="baseos" value="win32"/>
+<mapEntry key="basews" value="win32"/>
+<mapEntry key="bootclasspath" value="C:\BW6\tibcojre64\1.8.0\lib\resources.jar;C:\BW6\tibcojre64\1.8.0\lib\rt.jar;C:\BW6\tibcojre64\1.8.0\lib\jsse.jar;C:\BW6\tibcojre64\1.8.0\lib\jce.jar;C:\BW6\tibcojre64\1.8.0\lib\charsets.jar;C:\BW6\tibcojre64\1.8.0\lib\jfr.jar;C:\BW6\tibcojre64\1.8.0\lib\ext\access-bridge-64.jar;C:\BW6\tibcojre64\1.8.0\lib\ext\cldrdata.jar;C:\BW6\tibcojre64\1.8.0\lib\ext\dnsns.jar;C:\BW6\tibcojre64\1.8.0\lib\ext\jaccess.jar;C:\BW6\tibcojre64\1.8.0\lib\ext\jfxrt.jar;C:\BW6\tibcojre64\1.8.0\lib\ext\localedata.jar;C:\BW6\tibcojre64\1.8.0\lib\ext\nashorn.jar;C:\BW6\tibcojre64\1.8.0\lib\ext\sunec.jar;C:\BW6\tibcojre64\1.8.0\lib\ext\sunjce_provider.jar;C:\BW6\tibcojre64\1.8.0\lib\ext\sunmscapi.jar;C:\BW6\tibcojre64\1.8.0\lib\ext\sunpkcs11.jar;C:\BW6\tibcojre64\1.8.0\lib\ext\zipfs.jar"/>
+<mapEntry key="eclipse.running" value="true"/>
+<mapEntry key="javacDebugInfo" value="on"/>
+<mapEntry key="javacFailOnError" value="false"/>
+<mapEntry key="javacSource" value="1.8"/>
+<mapEntry key="javacTarget" value="1.8"/>
+<mapEntry key="javacVerbose" value="false"/>
+</mapAttribute>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="${workspace_loc:/SOAPAPI/build.xml}"/>
+<stringAttribute key="process_factory_id" value="org.eclipse.ant.ui.remoteAntProcessFactory"/>
+</launchConfiguration>

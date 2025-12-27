@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:tns="Response" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="Response">
+  <xsd:element name="Employee">
+    <xsd:complexType>
+            <xsd:all>
+        <xsd:element maxOccurs="1" minOccurs="0" name="Fname" type="xsd:string"/>
+        <xsd:element maxOccurs="1" minOccurs="0" name="Lname" type="xsd:string"/>
+        <xsd:element maxOccurs="1" minOccurs="0" name="Salary" type="xsd:integer"/>
+                <xsd:element maxOccurs="1" minOccurs="0" name="EmpID" type="xsd:integer"/>
+                <xsd:element maxOccurs="1" minOccurs="0" name="Status" type="xsd:string"/>
+            </xsd:all>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

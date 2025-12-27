@@ -83,7 +83,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SOAPAPI//RestPort</name>
-			<value>9803</value>
+			<value>9144</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -91,7 +91,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//SOAPAPI//PortSOAP</name>
-			<value>9310</value>
+			<value>9971</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>

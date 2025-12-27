@@ -71,6 +71,20 @@
     </scaext:binding>
     <scact:bindingAdjunct xmi:id="_OGT7lMcYEfCIQfD07tzNaQ" bindingName="RestService2"/>
   </sca:service>
+  <sca:service xmi:id="_CCI98tnCEfCBF7iLg9ox3g" name="fetchEmp" promote="ComponentEmployee/fetchEmp">
+    <sca:interface.wsdl xmi:id="_CCI99tnCEfCBF7iLg9ox3g" interface="http://xmlns.example.com/20251121210834PLT#wsdl.interface(fetchEmp)"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_CCVLMNnCEfCBF7iLg9ox3g" name="RestService3" path="/fetchEmp" docBasePath="http://localhost:7777/SOAPAPI" docResourcePath="Employee" basePath="/" connector="soapapi.HTTPRESTConnector" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/RESTAPI.Employee-Employee.json">
+      <operation xmi:id="_CCVLMdnCEfCBF7iLg9ox3g" operationName="get" nickname="get-fetchEmp" httpMethod="GET" responseStyle="array">
+        <parameters xmi:id="_GfmV0NnEEfCBF7iLg9ox3g">
+          <parameterMapping xmi:id="_GfmV0dnEEfCBF7iLg9ox3g" parameterName="EmpID" parameterType="Query" dataType="integer#int32"/>
+        </parameters>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_CCVLM9nCEfCBF7iLg9ox3g"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_CCVLMtnCEfCBF7iLg9ox3g" bindingName="RestService3"/>
+  </sca:service>
   <sca:property xmi:id="___EAwMbaEfCWoNddOvrFIQ" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="___XiwMbaEfCWoNddOvrFIQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="___XiwcbaEfCWoNddOvrFIQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
@@ -99,6 +113,9 @@
     </sca:service>
     <sca:service xmi:id="_OGKKkMcYEfCIQfD07tzNaQ" name="DynaQuery">
       <sca:interface.wsdl xmi:id="_OGKKkccYEfCIQfD07tzNaQ" interface="http://xmlns.example.com/20251121210834PLT#wsdl.interface(DynaQuery)" scaext:wsdlLocation="../Processes/RESTAPI/Employee.bwp"/>
+    </sca:service>
+    <sca:service xmi:id="_CCI98NnCEfCBF7iLg9ox3g" name="fetchEmp">
+      <sca:interface.wsdl xmi:id="_CCI98dnCEfCBF7iLg9ox3g" interface="http://xmlns.example.com/20251121210834PLT#wsdl.interface(fetchEmp)"/>
     </sca:service>
   </sca:component>
 </sca:composite>

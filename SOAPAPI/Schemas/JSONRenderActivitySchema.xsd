@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:extns="http://www.example.com/namespaces/tns/1765809180654" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:tns="http://tns.tibco.com/bw/activity/jsonRender/xsd/input/c6e8ba80-6eba-4a3e-bdc5-2d62d60e3ec0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://tns.tibco.com/bw/activity/jsonRender/xsd/input/c6e8ba80-6eba-4a3e-bdc5-2d62d60e3ec0">
+    <xsd:import namespace="http://www.example.com/namespaces/tns/1765809180654"/>
+    <xsd:element name="FetchResponse" tibex:source="bw.json.render">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" ref="extns:Record"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

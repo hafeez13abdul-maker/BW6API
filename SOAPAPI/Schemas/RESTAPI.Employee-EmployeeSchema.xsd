@@ -6,4 +6,10 @@
     </sequence>
   </complexType>
   <element name="integerArray" type="tns:integerArray"/>
+    <complexType name="stringArray">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="string" type="string"/>
+    </sequence>
+  </complexType>
+    <element name="stringArray" type="tns:stringArray"/>
 </schema>

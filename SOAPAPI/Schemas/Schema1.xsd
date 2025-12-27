@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:tns="http://www.example.com/namespaces/tns/1765809180654" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.example.com/namespaces/tns/1765809180654">
+  <xsd:element name="Record">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="Fname" type="xsd:string"/>
+        <xsd:element maxOccurs="unbounded" minOccurs="0" name="Lname" type="xsd:string"/>
+                <xsd:element maxOccurs="unbounded" minOccurs="0" name="Salary" type="xsd:integer"/>
+                <xsd:element maxOccurs="unbounded" minOccurs="0" name="EmpID" type="xsd:integer"/>
+                <xsd:element minOccurs="0" name="Status" type="xsd:string"/>
+            </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
